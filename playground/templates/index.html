@@ -60,8 +60,10 @@
         <div class="col-lg-8 mx-auto">
          <h2>about</h2>
           <p class="lead">I am a technology professional with a track record of success at big and small projects and a passion for solving intractible problems. After several years away from the industry, I returned to school and completed a degree in Computer Science. I am pursuing opportunities in software development, cybersecurity, and devops.</p>
+          <p>{{PASSWORD}}</p>
           <p><a href="{% static 'files/resume2019.pdf' %}">Download Resume (PDF)</a></p>
           <p>This site is written by me using only vim, in Python 3 on Django 2 on a RedHat 7 EC2 instance on AWS.</p>
+          <p>Git repository for this site is <a href="https://github.com/lsimonis/lukassimonis_net">here</a>.</p>
         </div>
       </div>
     </div>
@@ -73,10 +75,9 @@
         <div class="col-lg-8 mx-auto">
           <h2>experience</h2>
           <p class="lead"></p>
-            <ul><i>Electronic Data Systems (EDS)<br>2008</i><br>Managed development environment and designed production architecture for project for client Delta Dental. This was a devops role on the operations side but with a lot of cooperation and information exchange with developers as well as a lot of documentation of practices and architecture.</ul>
-            <ul><i>Bayview Financial, LLC<br>2004-2008</i><br>I architected, installed and maintained multiple Oracle Portal web sites. These included several corporate Intranet sites and one major revenue-generating Internet-facing web site. In addition to the application server layer, I was also responsible for the infrastructure tier (identity management and databases). I also provided engineering and support for the company's Tomcat/Apache and Weblogic platforms. This position involved significant Linux and UNIX system administration.</ul>
-            <ul><i>Oracle Corporation<br>2000-2004</i><br>I was a member of the Internet Hosting Services team, maintaining J2EE websites. These were all multi-tier,load-balanced applications running Oracle tech stacks on topof Sun Solaris and RedHat Linux. This was primarily a project-based position and required independenttime management. I was the primary operations person forthe company global intranet site my.oracle.com, which alsoserved as the first production rollout project for demonstrating and testing new technology and updates, as well as for login.oracle.com, the company's Single Sign On solution.</ul>
-            <ul><i>Earthlink, Inc.<br>1999-2000</i><br>I provided first and second level support to Earthlink's ISP customers. I acted in a senior capacity, providing leadership, training and documentation to other agents.</ul>
+            {% for experience in experiences %}
+              <ul><i>{{ experience.company }}</i><br>{{ experience.startdate }}-{{ experience.enddate }}<br>{{ experience.description }}</ul>
+            {% endfor %}
         </div>
       </div>
     </div>

@@ -15,5 +15,6 @@ import os
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'lukassimonis_net.settings')
+exec(open(os.path.join(os.sep, "etc" + os.sep, "django", 'db.py')).read())
 
 application = get_wsgi_application()

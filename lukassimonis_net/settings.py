@@ -142,7 +142,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_ROOT = '/var/www/static'
-STATIC_URL = '/static/'
+STATIC_URL = 'https://static.lukassimonis.net/'
 STATICFILES_DIRS = [
     os.path.join(PROJECT_DIR, "static"),
 ]

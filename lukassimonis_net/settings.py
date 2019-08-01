@@ -29,10 +29,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'lukassimonis.net',
-    '52.89.182.180'
+    'localhost'
 ]
 #redirect to https:
-SECURE_SSL_REDIRECT=True
+SECURE_SSL_REDIRECT=False
 
 
 # Application definition
@@ -75,13 +75,12 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'lukassimonis_net.wsgi.application'
+#WSGI_APPLICATION = 'lukassimonis_net.wsgi.application'
 
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -99,6 +98,7 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+"""
 
 
 # Password validation

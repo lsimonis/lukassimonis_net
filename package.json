@@ -1,0 +1,19 @@
+{
+  "name": "lukassimonis_net",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsimonis/lukassimonis_net.git"
+  },
+  "author": "Lukas Simonis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lsimonis/lukassimonis_net/issues"
+  },
+  "homepage": "https://github.com/lsimonis/lukassimonis_net#readme"
+}

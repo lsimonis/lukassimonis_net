@@ -60,9 +60,7 @@
         <div class="col-lg-8 mx-auto">
          <h2>about</h2>
           <p class="lead">I am a technology professional with a track record of success at big and small projects and a passion for solving intractible problems. After several years away from the industry, I returned to school and completed a degree in Computer Science. I am pursuing opportunities in software development, cybersecurity, and devops.</p>
-          <p>{{PASSWORD}}</p>
           <p><a href="{% static 'files/resume2019.pdf' %}">Download Resume (PDF)</a></p>
-          <p>This site is written by me using only vim, in Python 3 on Django 2 on a RedHat 7 EC2 instance on AWS.</p>
           <p>Git repository for this site is <a href="https://github.com/lsimonis/lukassimonis_net">here</a>.</p>
         </div>
       </div>
@@ -76,7 +74,15 @@
           <h2>experience</h2>
           <p class="lead"></p>
             {% for experience in experiences %}
-              <ul><i>{{ experience.company }}</i><br>{{ experience.startdate }}-{{ experience.enddate }}<br>{{ experience.description }}</ul>
+              <ul><i>{{ experience.company }}</i></ul>
+              <ul>{{ experience.start_year }} -
+                {% if experience.end_date %}
+                  {{ experience.end_year }}
+                {% else %}
+                  Present
+                {% endif %}
+              </ul>
+              <ul>{{ experience.description }}</ul>
             {% endfor %}
         </div>
       </div>

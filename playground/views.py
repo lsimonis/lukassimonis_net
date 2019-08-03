@@ -6,5 +6,5 @@ from .models import Experience
 def index(request):
   #return HttpResponse("this is a django website dude")
   #return render_to_response('index.html')
-  experiences = Experience.objects.all()
+  experiences = Experience.objects.all().order_by('-start_date')
   return render(request,'index.html',{'experiences':experiences})

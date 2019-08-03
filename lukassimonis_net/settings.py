@@ -27,6 +27,7 @@ SECRET_KEY = 'bv)3-29__woot=85474g!!z3h=bep#9nzxg@a!mng%f4a6jkx0'
 DEBUG = False
 
 ALLOWED_HOSTS = [
+    'localhost',
     'lukassimonis.net',
     'www.lukassimonis.net',
     'lsimonis-public-lb1-973355551.us-west-1.elb.amazonaws.com',
@@ -81,7 +82,6 @@ TEMPLATES = [
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -101,6 +101,7 @@ DATABASES = {
 		'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
 	}
     }
+"""
 }
 
 

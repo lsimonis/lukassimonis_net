@@ -1,8 +1,8 @@
 attrs==19.1.0
 Click==7.0
 Django==2.2.4
-mysql-client==0.0.1
-mysqlclient==1.4.2.post1
+#mysql-client==0.0.1
+#mysqlclient==1.4.2.post1
 packaging==19.1
 pbr==5.4.1
 pip-review==1.0

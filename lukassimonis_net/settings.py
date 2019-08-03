@@ -24,25 +24,15 @@ PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 SECRET_KEY = 'bv)3-29__woot=85474g!!z3h=bep#9nzxg@a!mng%f4a6jkx0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-#DEBUG = False
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'lukassimonis.net',
-<<<<<<< HEAD
-    'localhost'
-]
-#redirect to https:
-SECURE_SSL_REDIRECT=False
-=======
-    '52.89.182.180',
-    '54.153.69.147',
-    '192.168.11.111',
+    'www.lukassimonis.net',
     'lsimonis-public-lb1-973355551.us-west-1.elb.amazonaws.com',
 ]
 #redirect to https:
-#SECURE_SSL_REDIRECT=True #disabling for ssl termination on lbr
->>>>>>> ab94df5b2ef0977c6bee4d4874abf1778f2bcfb7
+SECURE_SSL_REDIRECT=False
 
 
 # Application definition
@@ -98,15 +88,18 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django',
         'USER': 'django',
-        'PASSWORD':'cWT3KnSKkswwJkNP',
-        #'PASSWORD': os.environ.get('MYSQL_PASS'),
+        'PASSWORD': os.environ.get('MYSQL_PASS'),
         'HOST': 'localhost',
         'PORT': '3306',
+	'OPTIONS':{
+		'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+	}
     }
 }
 

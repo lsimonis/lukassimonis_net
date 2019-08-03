@@ -1,2 +1,3 @@
 db.sqlite3 merge=ours
 lukassimonis_net/settings.py merge=ours
+lukassimonis_net/wsgi.py merge=ours

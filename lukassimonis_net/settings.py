@@ -29,10 +29,20 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'lukassimonis.net',
+<<<<<<< HEAD
     'localhost'
 ]
 #redirect to https:
 SECURE_SSL_REDIRECT=False
+=======
+    '52.89.182.180',
+    '54.153.69.147',
+    '192.168.11.111',
+    'lsimonis-public-lb1-973355551.us-west-1.elb.amazonaws.com',
+]
+#redirect to https:
+#SECURE_SSL_REDIRECT=True #disabling for ssl termination on lbr
+>>>>>>> ab94df5b2ef0977c6bee4d4874abf1778f2bcfb7
 
 
 # Application definition
@@ -93,7 +103,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django',
         'USER': 'django',
-        'PASSWORD': os.environ.get('MYSQL_PASS'),
+        'PASSWORD':'cWT3KnSKkswwJkNP',
+        #'PASSWORD': os.environ.get('MYSQL_PASS'),
         'HOST': 'localhost',
         'PORT': '3306',
     }
@@ -137,11 +148,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_ROOT = '/var/www/static/'
-#STATIC_URL = 'https://lukassimonis.net/static/'
-STATIC_URL = '/static/'
+STATIC_ROOT = '/var/www/static'
+STATIC_URL = 'https://static.lukassimonis.net/'
 STATICFILES_DIRS = [
-#    os.path.join(BASE_DIR, "static"),
     os.path.join(PROJECT_DIR, "static"),
-#    '/var/www/static',
 ]

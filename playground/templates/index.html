@@ -73,17 +73,19 @@
         <div class="col-lg-8 mx-auto">
           <h2>experience</h2>
           <p class="lead"></p>
+            <ul>
             {% for experience in experiences %}
-              <ul><i>{{ experience.company }}</i></ul>
-              <ul>{{ experience.start_year }} -
+              <li><i>{{ experience.company }}</i></li>
+              <li>{{ experience.start_year }} -
                 {% if experience.end_date %}
                   {{ experience.end_year }}
                 {% else %}
                   Present
                 {% endif %}
-              </ul>
-              <ul>{{ experience.description }}</ul>
+              </li>
+              <li>{{ experience.description }}</li>
             {% endfor %}
+          </ul>
         </div>
       </div>
     </div>

@@ -26,10 +26,14 @@ SECRET_KEY = 'bv)3-29__woot=85474g!!z3h=bep#9nzxg@a!mng%f4a6jkx0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+# Set flag to disable admin app in production
+ADMIN_ENABLED = False
+
 ALLOWED_HOSTS = [
     'localhost',
     'lukassimonis.net',
     'www.lukassimonis.net',
+    'mail.lukassimonis.net',
     'lsimonis-public-lb1-973355551.us-west-1.elb.amazonaws.com',
 ]
 #redirect to https:
@@ -88,20 +92,20 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django',
         'USER': 'django',
         'PASSWORD': os.environ.get('MYSQL_PASS'),
-        'HOST': 'localhost',
+        'HOST': '192.168.11.111',
         'PORT': '3306',
 	'OPTIONS':{
 		'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
 	}
     }
 }
-"""
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators

@@ -21,10 +21,10 @@ PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'bv)3-29__woot=85474g!!z3h=bep#9nzxg@a!mng%f4a6jkx0'
+SECRET_KEY = os.environ['DJANGO_SECRET']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # Set flag to disable admin app in production
 ADMIN_ENABLED = False
@@ -98,7 +98,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django',
         'USER': 'django',
-        'PASSWORD': os.environ.get('MYSQL_PASS'),
+        'PASSWORD': os.environ.get('MYSQL_PASSWORD'),
         'HOST': '192.168.11.111',
         'PORT': '3306',
 	'OPTIONS':{

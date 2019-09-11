@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/lsimonis
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://lukassimonis.net
+  * I am lsimonis (https://keybase.io/lsimonis) on keybase.
+  * I have a public key ASBmvS6p_otMv12xLeeiGG-xalAxRoHZ4b1Sff3GpyOo8wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01207f7a404788dc9efdf9f068dc3f603f647eaf45d8fe8c11322342455d93155bad0a",
+      "host": "keybase.io",
+      "kid": "012066bd2ea9fe8b4cbf5db12de7a2186fb16a50314681d9e1bd527dfdc6a723a8f30a",
+      "uid": "a9d2394bf6a924d0db3175a1a182e219",
+      "username": "lsimonis"
+    },
+    "merkle_root": {
+      "ctime": 1568170642,
+      "hash": "9eeb7629b33a6b8c19a14b748432b45ccc99d9986e6127b516e7ed582776137146b3de488729c0f0cdbe38e43013d3d6755c517ba47d948924899d7564be74a1",
+      "hash_meta": "8b9b91dbb44a50178cec7a4fea2fc1f528cfb54ac6bf5850b57c22dc9fa12fa4",
+      "seqno": 6571171
+    },
+    "service": {
+      "entropy": "hwMxJMIH0NEMT9MuBmkAl295",
+      "hostname": "lukassimonis.net",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.4.0"
+  },
+  "ctime": 1568170654,
+  "expire_in": 504576000,
+  "prev": "42ca9eed70f1b7cb28b97871d2bf26d445150234e58c26126b813d98a32ff282",
+  "seqno": 31,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgZr0uqf6LTL9dsS3nohhvsWpQMUaB2eG9Un39xqcjqPMKp3BheWxvYWTESpcCH8QgQsqe7XDxt8souXhx0r8m1EUVAjTljCYSa4E9mKMv8oLEIBkfeT/Dh/8lttLEEtsTOqXhM+iWNDZxcuicqgleTgAPAgHCo3NpZ8RAwzn3psp05MSlIIbfMV+Y8cxQOmj6N1y9WOk6YeJx3/+Va/1GLVnFyO9cTBdLM5GnwpsZWMBeTiEInvzvNz+RB6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGL97Wqez0Izk3NnQ2O3012FRSUQ//ihcz7X1gFSKItbo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lsimonis
+
+==================================================================

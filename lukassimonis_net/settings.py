@@ -24,7 +24,7 @@ PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 SECRET_KEY = os.environ['DJANGO_SECRET']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # Set flag to disable admin app in production
 ADMIN_ENABLED = False

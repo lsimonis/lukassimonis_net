@@ -9,3 +9,6 @@ def index(request):
 
   return render(request,'index.html',{'experiences':experiences,
 				      'education': education})
+
+def keybase(request):
+  return render(request, 'keybase.txt')

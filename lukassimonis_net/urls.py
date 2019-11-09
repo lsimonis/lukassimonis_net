@@ -24,14 +24,7 @@ urlpatterns = [
 
 #include playground url rules
 urlpatterns += [
-    path('playground/', include('playground.urls')),
-]
-
-
-#redirect docroot to playground app
-from django.views.generic import RedirectView
-urlpatterns += [
-    path('', RedirectView.as_view(url='/playground/', permanent=True))
+    path('', include('playground.urls')),
 ]
 
 # Use static() to add url mapping to serve static files during development (only)
